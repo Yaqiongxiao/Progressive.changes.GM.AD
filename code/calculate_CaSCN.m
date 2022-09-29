@@ -2,7 +2,7 @@
 clear
 clc
 
-%%%%¼ÆËã½á¹¹Òò¹ûĞ­±ä
+%%%%è®¡ç®—ç»“æ„å› æœåå˜
 roits = load('first_C1_C2_C3_continue_overlap.txt');
 [Result_X2Y,Result_Y2X,ROI_sequence] = restgca_CROI_Bivariate(roits,1,[]);
 outpath='E:\ADNI_longitudinal_data\GMV_skeleton\CaSCN\';
@@ -106,7 +106,7 @@ save(outname2,'rdiff_Y2X');
 
 
 
-%%%%¼ÆËã½á¹¹Òò¹ûĞ­±äÒÔ¼°Êä³öTÖµ
+%%%%è®¡ç®—ç»“æ„å› æœåå˜ä»¥åŠè¾“å‡ºTå€¼
 clear
 clc
 
@@ -120,7 +120,7 @@ save(outname1,'Result_X2Y');
 outname2 = [outpath,'Pvalues_First2ndoverlap_2_seconddecrease'];
 save(outname2,'PX2Y');
 
-%%%%Ö»¼ÆËã½á¹¹Òò¹ûĞ­±äÍ¨¹ıÖÃ»»È·¶¨Æ½¾ù×÷ÓÃ
+%%%%åªè®¡ç®—ç»“æ„å› æœåå˜é€šè¿‡ç½®æ¢ç¡®å®šå¹³å‡ä½œç”¨
 clear;clc;
 roits = load('first_second_overlapin1st_C123_continue2nd.txt');
 rdiff_X2Y = zeros(10,10000);
